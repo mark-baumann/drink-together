@@ -10,6 +10,15 @@ import UIKit
 
 class home: UIViewController {
 
+    
+    
+    @IBOutlet weak var leading: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var trailing: NSLayoutConstraint!
+    
+    var menuout = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +26,18 @@ class home: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func menuTapped(_ sender: Any) {
+        
+        if menuout == false {
+            leading.constant = 150
+            trailing.constant = -150
+            menuout = true
+        }else {
+            leading.constant = 0
+            trailing.constant = 0
+            menuout = false
+        }
     }
-    */
-
+    
 }
