@@ -150,10 +150,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeL-Cu-sGv">
-                                <rect key="frame" x="56" y="278" width="46" height="30"/>
+                                <rect key="frame" x="60" y="193" width="44" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="safeArea" id="6jV-zU-JYe"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="mcW-ZC-zG2" kind="show" id="BZ7-6P-7zV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -174,6 +177,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="button" destination="aeL-Cu-sGv" id="pFC-X8-aJy"/>
                         <outlet property="leading" destination="Eiv-1l-BLv" id="Wh2-Ie-OXQ"/>
                         <outlet property="trailing" destination="poa-bb-KXr" id="Er9-fy-gdc"/>
                     </connections>
@@ -200,6 +204,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1l0-ba-cCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2215.9420289855075" y="51.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HRf-Bh-ft3">
+            <objects>
+                <viewController id="mcW-ZC-zG2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ev-ii-0DL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auj-Cc-i3l">
+                                <rect key="frame" x="76" y="221" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kUE-bw-eLW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hYe-Ub-4Hh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfA-QK-MED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440.5797101449275" y="793.52678571428567"/>
         </scene>
     </scenes>
     <resources>

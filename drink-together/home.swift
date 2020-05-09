@@ -19,9 +19,12 @@ class home: UIViewController {
     
     var menuout = false
     
+    @IBOutlet weak var button: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        menuTapped(false)
         // Do any additional setup after loading the view.
     }
     
@@ -33,10 +36,12 @@ class home: UIViewController {
             leading.constant = 150
             trailing.constant = -150
             menuout = true
+            button.isHidden = false
         }else {
             leading.constant = 0
             trailing.constant = 0
             menuout = false
+            button.isHidden = true
         }
     }
     
