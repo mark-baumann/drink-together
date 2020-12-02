@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-#include <TargetConditionals.h>
-#if !TARGET_OS_OSX
+#import <TargetConditionals.h>
+#if !TARGET_OS_OSX && !TARGET_OS_WATCH
 
-#import <FirebaseCore/FIRLogger.h>
+#import "FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
 
 #import "FirebaseAuth/Sources/Auth/FIRAuthGlobalWorkQueue.h"
+#import "FirebaseAuth/Sources/Auth/FIRAuth_Internal.h"
 #import "FirebaseAuth/Sources/SystemService/FIRAuthAppCredential.h"
 #import "FirebaseAuth/Sources/SystemService/FIRAuthAppCredentialManager.h"
 #import "FirebaseAuth/Sources/SystemService/FIRAuthNotificationManager.h"
@@ -117,8 +118,12 @@ static const NSTimeInterval kProbingTimeout = 1;
 #if !TARGET_OS_TV
     } else if ([self->_application.delegate
                    respondsToSelector:@selector(application:didReceiveRemoteNotification:)]) {
+// iOS 10 deprecation
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
       [self->_application.delegate application:self->_application
                   didReceiveRemoteNotification:proberNotification];
+#pragma clang diagnostic pop
 #endif
     } else {
       FIRLogWarning(kFIRLoggerAuth, @"I-AUT000015",
