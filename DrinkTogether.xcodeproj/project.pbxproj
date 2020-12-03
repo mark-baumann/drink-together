@@ -17,8 +17,9 @@
 		BCDF1F2B2577F24300B7DC8C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */; };
 		BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */; };
 		BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */; };
-		BCDF1F362578027200B7DC8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCDF1F352578027200B7DC8C /* GoogleService-Info.plist */; };
 		BCDF1F592578153600B7DC8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F582578153500B7DC8C /* Constants.swift */; };
+		BCEAD0782578FC5B00C2D344 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */; };
+		BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEAD0902579157B00C2D344 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BCDF1F352578027200B7DC8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCDF1F582578153500B7DC8C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCEAD0902579157B00C2D344 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F8C9DAC399526BCE578974F9 /* Pods-DrinkTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.debug.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,12 +95,13 @@
 				BCDF1F332577F28200B7DC8C /* View Controllers */,
 				BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */,
 				BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */,
-				BCDF1F352578027200B7DC8C /* GoogleService-Info.plist */,
 				BCDF1F1B2577F1ED00B7DC8C /* Main.storyboard */,
+				BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */,
 				BCDF1F1E2577F1ED00B7DC8C /* Assets.xcassets */,
 				BCDF1F202577F1ED00B7DC8C /* LaunchScreen.storyboard */,
 				BCDF1F232577F1ED00B7DC8C /* Info.plist */,
 				BCDF1F582578153500B7DC8C /* Constants.swift */,
+				BCEAD0902579157B00C2D344 /* Utilities.swift */,
 			);
 			path = DrinkTogether;
 			sourceTree = "<group>";
@@ -174,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */,
-				BCDF1F362578027200B7DC8C /* GoogleService-Info.plist in Resources */,
+				BCEAD0782578FC5B00C2D344 /* GoogleService-Info.plist in Resources */,
 				BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */,
 				BCDF1F1D2577F1ED00B7DC8C /* Main.storyboard in Resources */,
 			);
@@ -235,6 +238,7 @@
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
+				BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */,
 				BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

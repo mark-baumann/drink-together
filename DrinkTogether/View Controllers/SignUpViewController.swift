@@ -52,6 +52,21 @@ class SignUpViewController: UIViewController {
             return "Please fill in all fields."
         }
         
+        // Valid email address entered
+        if !Utilities.isValidEmail(email: emailTextField.text!) {
+            return "Please enter a valid email address."
+        }
+        
+        // Username meets min length criteria
+        if usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count < 5 {
+            return "Please enter a username with a length of atleast 5 characters."
+        }
+        
+        // Secure password is used
+        if !Utilities.isSecurePassword(password: passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)) {
+            return "Your password should be atleast 8 characters long and include a minimum of one uppercase character and a number."
+        }
+        
         return nil
     }
     

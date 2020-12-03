@@ -4,14 +4,18 @@ App to know where people are drinking in your region. It is a Mix of Tinder and 
 ### TODO
 
 - [ ] Sign up form validation
-  - [ ] Password is secure
-  - [ ] Valid email entered
-  - [ ] Min length of username?
+  - [x] Password is secure
+  - [x] Valid email entered
+  - [x] Min length of username
   - [ ] Username unique
-- [ ] Sign in form validation
-  - [ ] Valid email entered
+- [x] Sign in form validation
+  - [x] Valid email entered
 - [ ] Implement solution for incomplete users on sign up (no data to collection added)
 - [ ] Loading bar or rotating thingi while creating user or signing in
 - [ ] Redirect back to sign in screen when not authenticated on home etc.
 - [ ] Navigate back button in "sign in" and "sign up"
 - [ ] Firebase access control
+- [ ] Backend validation
+  - [ ] "users"-"username" is unique
+  - [ ] "users"-"username" has minlength of 5
+- [ ] Launch screen storyboard animation

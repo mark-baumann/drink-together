@@ -48,6 +48,11 @@ class SignInViewController: UIViewController {
             return "Please fill in all fields."
         }
         
+        // Email address is valid
+        if !Utilities.isValidEmail(email: emailTextField.text!) {
+            return "Please enter a valid email address."
+        }
+        
         return nil
     }
     
