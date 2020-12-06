@@ -29,3 +29,38 @@ fastlane/test_output
 iOSInjectionProject/
 GoogleService-Info.plist
 Pods/
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Target Support Files/abseil/abseil.debug.xcconfig
+Pods/Target Support Files/abseil/abseil.release.xcconfig
+Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC.debug.xcconfig
+Pods/Target Support Files/BoringSSL-GRPC/BoringSSL-GRPC.release.xcconfig
+Pods/Target Support Files/Firebase/Firebase.debug.xcconfig
+Pods/Target Support Files/Firebase/Firebase.release.xcconfig
+Pods/Target Support Files/FirebaseAuth/FirebaseAuth.debug.xcconfig
+Pods/Target Support Files/FirebaseAuth/FirebaseAuth.release.xcconfig
+Pods/Target Support Files/FirebaseCore/FirebaseCore.debug.xcconfig
+Pods/Target Support Files/FirebaseCore/FirebaseCore.release.xcconfig
+Pods/Target Support Files/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.debug.xcconfig
+Pods/Target Support Files/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.release.xcconfig
+Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore.debug.xcconfig
+Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore.release.xcconfig
+Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport.debug.xcconfig
+Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport.release.xcconfig
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities.debug.xcconfig
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities.release.xcconfig
+Pods/Target Support Files/gRPC-C++/gRPC-C++.debug.xcconfig
+Pods/Target Support Files/gRPC-C++/gRPC-C++.release.xcconfig
+Pods/Target Support Files/gRPC-C++/gRPC-C++.release.xcconfig
+Pods/Target Support Files/gRPC-Core/gRPC-Core.debug.xcconfig
+Pods/Target Support Files/gRPC-Core/gRPC-Core.release.xcconfig
+Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.debug.xcconfig
+Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.release.xcconfig
+Pods/Target Support Files/leveldb-library/leveldb-library.debug.xcconfig
+Pods/Target Support Files/leveldb-library/leveldb-library.release.xcconfig
+Pods/Target Support Files/nanopb/nanopb.debug.xcconfig
+Pods/Target Support Files/nanopb/nanopb.release.xcconfig
+Pods/Target Support Files/PromisesObjC/PromisesObjC.debug.xcconfig
+Pods/Target Support Files/PromisesObjC/PromisesObjC.release.xcconfig
+Pods/Manifest.lock
+Pods/Target Support Files/GoogleUtilities/GoogleUtilities.debug.xcconfig

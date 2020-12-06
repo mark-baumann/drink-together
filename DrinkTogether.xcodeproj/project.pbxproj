@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D665C60257AD70F00DBD563 /* BurgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D665C5F257AD70F00DBD563 /* BurgerMenu.swift */; };
+		4DC58CCA257A958500BFA48C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
 		BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */; };
@@ -18,12 +20,13 @@
 		BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */; };
 		BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */; };
 		BCDF1F592578153600B7DC8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F582578153500B7DC8C /* Constants.swift */; };
-		BCEAD0782578FC5B00C2D344 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */; };
 		BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEAD0902579157B00C2D344 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D665C5F257AD70F00DBD563 /* BurgerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerMenu.swift; sourceTree = "<group>"; };
+		4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BCDF1F582578153500B7DC8C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCEAD0902579157B00C2D344 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F8C9DAC399526BCE578974F9 /* Pods-DrinkTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.debug.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,12 +98,12 @@
 				BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */,
 				BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */,
 				BCDF1F1B2577F1ED00B7DC8C /* Main.storyboard */,
-				BCEAD0772578FC5B00C2D344 /* GoogleService-Info.plist */,
 				BCDF1F1E2577F1ED00B7DC8C /* Assets.xcassets */,
 				BCDF1F202577F1ED00B7DC8C /* LaunchScreen.storyboard */,
 				BCDF1F232577F1ED00B7DC8C /* Info.plist */,
 				BCDF1F582578153500B7DC8C /* Constants.swift */,
 				BCEAD0902579157B00C2D344 /* Utilities.swift */,
+				4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */,
 			);
 			path = DrinkTogether;
 			sourceTree = "<group>";
@@ -113,6 +115,7 @@
 				BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */,
 				BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */,
 				BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */,
+				4D665C5F257AD70F00DBD563 /* BurgerMenu.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -177,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */,
-				BCEAD0782578FC5B00C2D344 /* GoogleService-Info.plist in Resources */,
+				4DC58CCA257A958500BFA48C /* GoogleService-Info.plist in Resources */,
 				BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */,
 				BCDF1F1D2577F1ED00B7DC8C /* Main.storyboard in Resources */,
 			);
@@ -236,6 +239,7 @@
 				BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */,
 				BCDF1F2B2577F24300B7DC8C /* SignUpViewController.swift in Sources */,
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
+				4D665C60257AD70F00DBD563 /* BurgerMenu.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
 				BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */,
@@ -388,13 +392,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZF8AX7CUZ;
+				DEVELOPMENT_TEAM = Z988D3GT3S;
 				INFOPLIST_FILE = DrinkTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.obser.DrinkTogether;
+				PRODUCT_BUNDLE_IDENTIFIER = io.obser.com.DrinkTogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,13 +412,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZF8AX7CUZ;
+				DEVELOPMENT_TEAM = Z988D3GT3S;
 				INFOPLIST_FILE = DrinkTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.obser.DrinkTogether;
+				PRODUCT_BUNDLE_IDENTIFIER = io.obser.com.DrinkTogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
