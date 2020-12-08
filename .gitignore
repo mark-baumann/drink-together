@@ -29,6 +29,7 @@ fastlane/test_output
 iOSInjectionProject/
 GoogleService-Info.plist
 Pods/
+Podfile.lock
 Pods/Manifest.lock
 Pods/Pods.xcodeproj/project.pbxproj
 Pods/Target Support Files/abseil/abseil.debug.xcconfig
