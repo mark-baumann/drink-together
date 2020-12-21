@@ -26,4 +26,4 @@ SignIn and SignUp
 Location:
 - [ ] If the User set the Navigation Property in the Settings to "Never" - than nothing should appear
 - [ ] Push the Location to the Firebase DB
-- [ ]  
+
