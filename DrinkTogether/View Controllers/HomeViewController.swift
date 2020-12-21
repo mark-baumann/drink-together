@@ -8,42 +8,40 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import MapKit
+import CoreLocation
 
-class HomeViewController: UIViewController {
 
-    @IBOutlet weak var testLabel: UILabel!
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
+
+    @IBOutlet weak var MapView: MKMapView!
+    
+    let manager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-  
-        // TEST
-        let db = Firestore.firestore()
-        db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
-            .getDocuments { (querySnapshot, err) in
-                if err != nil {
-                    self.testLabel.text = "Failed to fetch the username"
-                    return
-                }
-                
-                let userData = querySnapshot!.documents[0].data()
-                self.testLabel.text = userData["username"] as? String
-            }
-        // TEST END
+       
+
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        manager.requestWhenInUseAuthorization()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest //wie genau der Standort abgerufen wird
+        manager.startUpdatingLocation() //Standort holen
     }
-    */
+    
+    
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last{
+            let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            self.MapView.setRegion(region, animated: true)
+        }
+    }
 
 }
