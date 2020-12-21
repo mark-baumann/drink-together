@@ -3,6 +3,8 @@ App to know where people are drinking in your region. It is a Mix of Tinder and 
 
 ### TODO
 
+SignIn and SignUp
+
 - [ ] Sign up form validation
   - [x] Password is secure
   - [x] Valid email entered
@@ -19,3 +21,9 @@ App to know where people are drinking in your region. It is a Mix of Tinder and 
   - [ ] "users"-"username" is unique
   - [ ] "users"-"username" has minlength of 5
 - [ ] Launch screen storyboard animation
+
+
+Location:
+- [ ] If the User set the Navigation Property in the Settings to "Never" - than nothing should appear
+- [ ] Push the Location to the Firebase DB
+- [ ]  
