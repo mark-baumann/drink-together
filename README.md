@@ -31,4 +31,4 @@ Location:
 
 UI:
 - [ ] Profile Tab with abbility to change account data also the actual promille value
-- [ ]
+
