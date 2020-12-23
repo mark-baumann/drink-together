@@ -25,5 +25,10 @@ SignIn and SignUp
 
 Location:
 - [ ] If the User set the Navigation Property in the Settings to "Never" - than nothing should appear
-- [ ] Push the Location to the Firebase DB
+- [x] Push the Location to the Firebase DB
+- [ ] show Persons near by your location
+
+
+UI:
+- [ ] Profile Tab with abbility to change account data also the actual promille value
 
