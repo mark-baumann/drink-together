@@ -37,11 +37,38 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let db = Firestore.firestore()
         if let location = locations.last{
             let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
             self.MapView.setRegion(region, animated: true)
+            
+            
+            
+            
+            
+            db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
+                .getDocuments { (querySnapshot, err) in
+                    if err != nil {
+                        print("Failed")
+                        return
+                    }
+
+                    let  userdocid = querySnapshot!.documents[0].documentID
+                    db.collection("users").document(userdocid).setData(["koordinaten" : [GeoPoint(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))]],merge: true)
+                    
+                 
+                }
+            
+            //db.collection("users").document().setData(["updates" : [GeoPoint(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))]],merge: true)
+    
+        
         }
-    }
 
 }
+}
+
+
+
+      
+           

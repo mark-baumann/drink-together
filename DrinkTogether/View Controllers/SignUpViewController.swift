@@ -101,7 +101,7 @@ class SignUpViewController: UIViewController {
             // User was created
             // Store the user data (username)
             let db = Firestore.firestore()
-            
+          
             db.collection("users").addDocument(data: ["username": username, "uid": result!.user.uid]) { (error) in
                 if error != nil {
                     // broken user
@@ -113,10 +113,19 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    
+    
+    
     func redirectToNewHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as?HomeViewController
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as! TabViewController
+        
+        
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
     }
+    
+    
 }
+
+

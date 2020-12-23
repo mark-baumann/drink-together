@@ -132,10 +132,9 @@
             </objects>
             <point key="canvasLocation" x="1673.913043478261" y="-278.57142857142856"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Item-->
         <scene sceneID="Y8w-kR-H9H">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3aW-Ah-N1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeVC" id="Zvl-LS-rjO" customClass="HomeViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYz-n3-O2N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -149,12 +148,14 @@
                         <viewLayoutGuide key="safeArea" id="1J8-4s-1gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="com-HY-9zJ"/>
                     <connections>
                         <outlet property="MapView" destination="URw-dq-ThP" id="euT-df-2nm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aW-Ah-N1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2563.768115942029" y="93.75"/>
+            <point key="canvasLocation" x="3472.4637681159425" y="93.75"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="HNF-Ly-Ahh">
@@ -239,6 +240,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RS0-mk-7Pn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="5Ha-LQ-O78">
+            <objects>
+                <tabBarController storyboardIdentifier="Tab" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EG6-SM-nks" customClass="TabViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="umx-Jz-8k2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Zvl-LS-rjO" kind="relationship" relationship="viewControllers" id="nlx-At-bNv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeC-LA-ffa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562.3188405797105" y="93.75"/>
         </scene>
     </scenes>
     <resources>

@@ -88,7 +88,7 @@ class SignInViewController: UIViewController {
     }
     
     func redirectToNewHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as?HomeViewController
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as! TabViewController
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()

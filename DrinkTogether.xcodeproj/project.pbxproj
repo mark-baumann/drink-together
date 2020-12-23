@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A87A425929A51001D04FE /* TabViewController.swift */; };
 		4DC58CCA257A958500BFA48C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2A87A425929A51001D04FE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */,
 				BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */,
 				BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */,
+				4D2A87A425929A51001D04FE /* TabViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
+				4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */,
 				BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */,
 				BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */,
 			);
