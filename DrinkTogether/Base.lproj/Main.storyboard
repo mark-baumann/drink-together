@@ -132,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="1673.913043478261" y="-278.57142857142856"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Y8w-kR-H9H">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Zvl-LS-rjO" customClass="HomeViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="1J8-4s-1gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="com-HY-9zJ"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="mappin.and.ellipse" catalog="system" id="com-HY-9zJ"/>
                     <connections>
                         <outlet property="MapView" destination="URw-dq-ThP" id="euT-df-2nm"/>
                     </connections>
@@ -156,6 +156,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aW-Ah-N1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3472.4637681159425" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ouj-wF-k4V">
+            <objects>
+                <viewController id="m8r-fA-vuc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sow-8V-KRl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fNt-US-Np9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KxI-AO-8Ck"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ML-Ka-7Eq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4381.159420289855" y="835.71428571428567"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="HNF-Ly-Ahh">
@@ -252,14 +268,36 @@
                     </tabBar>
                     <connections>
                         <segue destination="Zvl-LS-rjO" kind="relationship" relationship="viewControllers" id="nlx-At-bNv"/>
+                        <segue destination="8Ay-iC-NRm" kind="relationship" relationship="viewControllers" id="RUF-od-r9k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeC-LA-ffa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2562.3188405797105" y="93.75"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="NKJ-qN-OaA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ay-iC-NRm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="jXf-An-i6D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9o-cL-GRh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m8r-fA-vuc" kind="relationship" relationship="rootViewController" id="GPf-6G-uEx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgI-3h-tGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471.0144927536235" y="835.71428571428567"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -46,6 +46,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             
             
+            var newPin = MKPointAnnotation()
+            newPin.coordinate = location.coordinate
+            MapView.addAnnotation(newPin)
+            
+            
+            
             
             db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
                 .getDocuments { (querySnapshot, err) in
@@ -57,10 +63,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                     let  userdocid = querySnapshot!.documents[0].documentID
                     db.collection("users").document(userdocid).setData(["koordinaten" : [GeoPoint(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))]],merge: true)
                     
+                    
+                    
+                   
                  
                 }
             
-            //db.collection("users").document().setData(["updates" : [GeoPoint(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))]],merge: true)
+            
     
         
         }
