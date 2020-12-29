@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             
             
-            var newPin = MKPointAnnotation()
+            let newPin = MKPointAnnotation()
             newPin.coordinate = location.coordinate
             MapView.addAnnotation(newPin)
             
