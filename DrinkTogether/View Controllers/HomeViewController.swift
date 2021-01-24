@@ -21,10 +21,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
-
-        
+        startUserFetching()
     }
+
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -34,8 +33,79 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         manager.startUpdatingLocation() //Standort holen
     }
     
+    func startUserFetching() {
+        /** Startet einen Hintergrund thread der alle paar Sekunden die User in den nächsten 5 Kilometern holt */
+        
+        // TODO thread loop
+        fetchNearUsers()
+    }
     
+    
+    func fetchNearUsers() {
+        
+        /*
+        // ~1 mile of lat and lon in degrees
+        let lat = 0.0144927536231884
+        let lon = 0.0181818181818182
+        
+        var latitude: Double? = nil
+        var longitude: Double? = nil
+        
+        let db = Firestore.firestore()
+        db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
+            .getDocuments { (querySnapshot, err) in
+                if err != nil {
+                    return
+                }
 
+                let docdata: [String: Any] = querySnapshot!.documents[0].data()
+                
+                if docdata["koordinaten"] == nil {
+                    return
+                }
+                
+                let koords: GeoPoint = docdata["koordinaten"] as! GeoPoint
+                
+                latitude = koords.latitude
+                longitude = koords.longitude
+                
+                //latitude = koords[0] as? Double
+                //longitude = koords[1] as? Double
+        }
+ */
+    
+        /*
+        print("NOBBISCHER latitude: ", latitude)
+        print("NOBBISCHER longitude: ", longitude)
+        
+        
+     
+        let latitude
+        
+        let lowerLat = latitude - (lat * distance)
+        let lowerLon = longitude - (lon * distance)
+
+        let greaterLat = latitude + (lat * distance)
+        let greaterLon = longitude + (lon * distance)
+
+        let lesserGeopoint = GeoPoint(latitude: lowerLat, longitude: lowerLon)
+        let greaterGeopoint = GeoPoint(latitude: greaterLat, longitude: greaterLon)
+
+        let docRef = Firestore.firestore().collection("locations")
+        let query = docRef.whereField("location", isGreaterThan: lesserGeopoint).whereField("location", isLessThan: greaterGeopoint)
+
+        query.getDocuments { snapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in snapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+ */
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let db = Firestore.firestore()
         if let location = locations.last{
