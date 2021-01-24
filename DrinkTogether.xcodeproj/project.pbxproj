@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A87A425929A51001D04FE /* TabViewController.swift */; };
 		4D2A87A82593D4DF001D04FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A87A72593D4DF001D04FE /* ProfileViewController.swift */; };
-		4DC58CCA257A958500BFA48C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
 		BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */; };
@@ -22,13 +21,13 @@
 		BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */; };
 		BCDF1F592578153600B7DC8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F582578153500B7DC8C /* Constants.swift */; };
 		BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEAD0902579157B00C2D344 /* Utilities.swift */; };
+		BCFEF98B25BDC57900005C0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCFEF98A25BDC57900005C0D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2A87A425929A51001D04FE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4D2A87A72593D4DF001D04FE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BCDF1F582578153500B7DC8C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BCEAD0902579157B00C2D344 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BCFEF98A25BDC57900005C0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8C9DAC399526BCE578974F9 /* Pods-DrinkTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.debug.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +96,7 @@
 		BCDF1F142577F1ED00B7DC8C /* DrinkTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BCFEF98A25BDC57900005C0D /* GoogleService-Info.plist */,
 				BCDF1F332577F28200B7DC8C /* View Controllers */,
 				BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */,
 				BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */,
@@ -105,7 +106,6 @@
 				BCDF1F232577F1ED00B7DC8C /* Info.plist */,
 				BCDF1F582578153500B7DC8C /* Constants.swift */,
 				BCEAD0902579157B00C2D344 /* Utilities.swift */,
-				4DC58CC9257A958500BFA48C /* GoogleService-Info.plist */,
 			);
 			path = DrinkTogether;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */,
-				4DC58CCA257A958500BFA48C /* GoogleService-Info.plist in Resources */,
+				BCFEF98B25BDC57900005C0D /* GoogleService-Info.plist in Resources */,
 				BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */,
 				BCDF1F1D2577F1ED00B7DC8C /* Main.storyboard in Resources */,
 			);

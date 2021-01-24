@@ -9,6 +9,5 @@ target 'DrinkTogether' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-  pod 'SideMenu'
 
 end
