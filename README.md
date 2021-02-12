@@ -31,4 +31,7 @@ Location:
 
 UI:
 - [ ] Profile Tab with abbility to change account data also the actual promille value
-
+- [x] Change Profile Picture and show the Profile Picture in the App
+- [ ] Thread to see in lifetime the Profileupdate
+- [ ] Ability to change the Mail Adress
+- [ ] See the Username and Mail Adress as Placeholder
