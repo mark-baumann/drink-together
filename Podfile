@@ -10,5 +10,8 @@ target 'DrinkTogether' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
-
+  pod 'GeoFire', '~> 4.0'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage', '~> 5.0' 
+  pod 'FirebaseUI'
 end

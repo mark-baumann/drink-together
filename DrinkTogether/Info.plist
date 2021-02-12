@@ -64,5 +64,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Too see where you are drinking</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow Accessing Photos to Update User Profile Picture</string>
 </dict>
 </plist>

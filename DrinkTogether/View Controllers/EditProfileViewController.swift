@@ -8,12 +8,13 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import FirebaseCore
 
-class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     
     
-    private let storage = Storage.storage().reference()
+    let storage = Storage.storage().reference()
     
    
     
