@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Too see where you are drinking</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow Accessing Photos to Update User Profile Picture</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -62,9 +66,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Too see where you are drinking</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please allow Accessing Photos to Update User Profile Picture</string>
 </dict>
 </plist>

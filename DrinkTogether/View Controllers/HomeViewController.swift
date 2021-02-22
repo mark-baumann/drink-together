@@ -11,7 +11,7 @@ import FirebaseAuth
 import MapKit
 import CoreLocation
 import FirebaseDatabase
-
+import GeoFire
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        //let db = Firestore.firestore()
+        
         if let location = locations.last{
             let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
@@ -61,27 +61,41 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             
             
             
+            let userID = Auth.auth().currentUser?.uid ?? "x"
+            Firestore.firestore().collection("users").whereField("uid", isEqualTo: userID)
+                    
+                    
+                
             
-//            db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
-//                .getDocuments { (querySnapshot, err) in
-//                    if err != nil {
-//                        print("Failed")
-//                        return
-//                    }
-//
-//                    let  userdocid = querySnapshot!.documents[0].documentID
-//                    db.collection("users").document(userdocid).setData(["koordinaten" : [GeoPoint(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))]],merge: true)
+            
+                           let geofireRef = Database.database().reference()
+                           let geoFire = GeoFire(firebaseRef: geofireRef)
+                       
+                       
+                       
+                       
+                       
+                       geoFire.setLocation(CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), forKey: userID)
+                     
                     
-                    
-                    
-                   
+                       let centerQuery = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+                       let circleQuery = geoFire.query(at: centerQuery, withRadius: 5)
+
+                       var queryHandle = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
+                          print("Key '\(key)' entered the search area and is at location '\(location)'")
+                        
+                        
+                       
                  
                 }
             
             
     
         
-        }
+       )}
+
+    }
+    
 
     }
 
@@ -90,5 +104,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
       
            
+
 
 
