@@ -19,6 +19,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     let manager = CLLocationManager()
     
+    
+    @IBAction func drinkbutton(_ sender: Any) {
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -80,24 +87,39 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                     
                        let centerQuery = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
                        let circleQuery = geoFire.query(at: centerQuery, withRadius: 5)
-
-                       var queryHandle = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
-                          print("Key '\(key)' entered the search area and is at location '\(location)'")
+                        
+                
+            var queryHandle = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
+                let annotation = MKPointAnnotation()
+                let coord = CLLocationCoordinate2D() 
+                annotation.coordinate = coord
+                annotation.title = "some user name"
+                self.MapView.addAnnotation(annotation)
+            })
+                
+                
+                
+               
+                
+                
+            }
                         
                         
-                       
-                 
+                                   
+                                       
+                                    
+                        
                 }
             
             
     
         
-       )}
+       }
 
-    }
+    
     
 
-    }
+    
 
 
 
