@@ -6,9 +6,17 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
 
 class MessageViewController: UIViewController {
 
+    let db = Firestore.firestore()
+    
+    
+       
+    
+    
     
     
     @IBOutlet weak var MessageBox: UITextField!
@@ -18,18 +26,16 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        IQKeyboardManager.shared.enable = true
         
-        
+        TableView.delegate = self
         TableView.dataSource = self
         
-        
+        TableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
     }
     
 
-   
-    
-    
+ 
     
     
     var messages: [Messsage] = [
@@ -38,7 +44,22 @@ class MessageViewController: UIViewController {
     ]
     
     
-    
+  
+    @IBAction func sendMessage(_ sender: Any) {
+        
+        if let messageBody = MessageBox.text,
+        
+           let messageSender = Auth.auth().currentUser?.email {
+            db.collection(FStore.collectionName).addDocument(data: [FStore.senderField: messageSender, FStore.bodyField: messageBody]) { (error) in
+                if let e = error {
+                    print("There was a issue saving data to Firestore" , e)
+                }
+            }
+        }
+        
+        
+        
+    }
     
 }
 
@@ -49,12 +70,19 @@ extension MessageViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
-        cell.textLabel?.text = messages[indexPath.row].body
+        cell.Label.text = messages[indexPath.row].body
         return cell
         
     }
     
     
+}
+
+
+extension MessageViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }

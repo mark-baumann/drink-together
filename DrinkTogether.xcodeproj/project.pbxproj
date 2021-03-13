@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		4D6513FB25D7089F003813C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6513FA25D7089F003813C9 /* ProfileViewController.swift */; };
 		4D8C0BD025FCE02B003B1334 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */; };
 		4D8C0BD525FCE9F4003B1334 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD425FCE9F4003B1334 /* Message.swift */; };
+		4D8C0BDA25FCFA6D003B1334 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */; };
+		4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */; };
+		4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
 		BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */; };
@@ -35,6 +38,8 @@
 		4D6513FA25D7089F003813C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		4D8C0BD425FCE9F4003B1334 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */,
+				4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +142,8 @@
 				4D2A87A72593D4DF001D04FE /* EditProfileViewController.swift */,
 				4D6513FA25D7089F003813C9 /* ProfileViewController.swift */,
 				4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */,
+				4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */,
+				4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -159,6 +167,9 @@
 			dependencies = (
 			);
 			name = DrinkTogether;
+			packageProductDependencies = (
+				4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */,
+			);
 			productName = DrinkTogether;
 			productReference = BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +197,9 @@
 				Base,
 			);
 			mainGroup = BCDF1F092577F1ED00B7DC8C;
+			packageReferences = (
+				4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = BCDF1F132577F1ED00B7DC8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */,
 				BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */,
 				4D6513DE25D6F142003813C9 /* GoogleService-Info.plist in Resources */,
 				BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */,
@@ -286,6 +301,7 @@
 				BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */,
 				4D8C0BD025FCE02B003B1334 /* MessageViewController.swift in Sources */,
 				BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */,
+				4D8C0BDA25FCFA6D003B1334 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +511,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCDF1F0A2577F1ED00B7DC8C /* Project object */;
 }
