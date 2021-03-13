@@ -30,6 +30,11 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     
+    
+    
+    
+    
+    
     @IBAction func safeSettings(_ sender: Any?) {
     SaveInfo()
     

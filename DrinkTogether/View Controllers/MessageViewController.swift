@@ -108,11 +108,23 @@ extension MessageViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
         cell.Label.text = messages[indexPath.row].body
         
-        
+        if message.sender == Auth.auth().currentUser?.email {
+                 
+            //This is a message from the current user.
+                   cell.MessageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+                   cell.Label.textColor = UIColor(named: K.BrandColors.purple)
+               }
+               //This is a message from another sender.
+               else {
+                   
+                   cell.MessageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
+                   cell.Label.textColor = UIColor(named: K.BrandColors.lightPurple)
+               }
     
         
         return cell

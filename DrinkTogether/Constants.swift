@@ -18,6 +18,14 @@ struct Constants {
 struct K {
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "MessageCell"
+    
+    struct BrandColors {
+            static let purple = "BrandPurple"
+            static let lightPurple = "BrandLightPurple"
+            static let blue = "BrandBlue"
+            static let lighBlue = "BrandLightBlue"
+        }
+    
 }
 
 struct FStore{

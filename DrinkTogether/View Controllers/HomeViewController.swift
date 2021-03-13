@@ -21,6 +21,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBAction func drinkbutton(_ sender: Any) {
+        
+        
+        
     }
     
     
@@ -48,6 +51,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     
    
+    
+    
+    
+    
     
   
     

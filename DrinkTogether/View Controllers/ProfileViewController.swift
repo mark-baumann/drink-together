@@ -14,8 +14,11 @@ import FirebaseUI
 
 class ProfileViewController: UIViewController {
 
+    let db = Firestore.firestore()
     
-
+    
+    @IBOutlet weak var NameLabel: UILabel!
+    
     
     
     @IBOutlet weak var imageView: UIImageView!
@@ -25,16 +28,29 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        getUsername()
        
             downloadImages()
-       
+            
     
         
         
     }
     
    
+    func getUsername() {
+        db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
+             .getDocuments { (querySnapshot, err) in
+
+
+                 let username = querySnapshot!.documents[0].get("username")
+                self.NameLabel.text = username as! String
+             
+         }
+       
+    }
+    
+    
     
     func downloadImages() {
         
