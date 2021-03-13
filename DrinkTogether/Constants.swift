@@ -13,3 +13,8 @@ struct Constants {
         static let tabViewController = "Tab"
     }
 }
+
+
+struct K {
+    static let cellIdentifier = "ReusableCell"
+}
