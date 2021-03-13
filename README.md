@@ -30,7 +30,11 @@ Location:
 
 
 UI:
-- [ ] Profile Tab with abbility to change account data also the actual promille value
+- [ ] Profile Tab with abbility to change account data 
 
 Messages:
 - [ ] Read and Write Data to User
+
+Promille Value:
+- [ ] Highest Promille Value
+- [ ] Actual Promille Value
