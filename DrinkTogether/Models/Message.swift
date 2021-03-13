@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Messsage {
+struct Message {
     let sender: String
     let body: String
     

@@ -15,7 +15,7 @@ class MessageViewController: UIViewController {
     
     
        
-    
+    var messages: [Message] = []
     
     
     
@@ -27,42 +27,80 @@ class MessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
-        TableView.delegate = self
+        
         TableView.dataSource = self
         
         TableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
+        
+        loadMessages()
     }
     
 
- 
+    func loadMessages() {
+        
+        db.collection(FStore.collectionName)
+                   .order(by: FStore.dateField)
+                   .addSnapshotListener { (querySnapshot, error) in
+                   
+                   self.messages = []
+                   
+                   if let e = error {
+                       print("There was an issue retrieving data from Firestore. \(e)")
+                   } else {
+                       if let snapshotDocuments = querySnapshot?.documents {
+                           for doc in snapshotDocuments {
+                               let data = doc.data()
+                               if let messageSender = data[FStore.senderField] as? String, let messageBody = data[FStore.bodyField] as? String {
+                                let newMessage = Message(sender: messageSender, body: messageBody)
+                                   self.messages.append(newMessage)
+                                   
+                                   DispatchQueue.main.async {
+                                          self.TableView.reloadData()
+                                       let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                       self.TableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+       
+        
+        
+        
+    }
     
     
-    var messages: [Messsage] = [
-    Messsage(sender: "mark@mark.de", body: "Hi"),
-    Messsage(sender: "mark@mark.de", body: "Hi")
-    ]
+    
     
     
   
     @IBAction func sendMessage(_ sender: Any) {
         
-        if let messageBody = MessageBox.text,
-        
-           let messageSender = Auth.auth().currentUser?.email {
-            db.collection(FStore.collectionName).addDocument(data: [FStore.senderField: messageSender, FStore.bodyField: messageBody]) { (error) in
-                if let e = error {
-                    print("There was a issue saving data to Firestore" , e)
-                }
-            }
-        }
-        
-        
-        
-    }
+        if let messageBody = MessageBox.text, let messageSender = Auth.auth().currentUser?.email {
+                   db.collection(FStore.collectionName).addDocument(data: [
+                       FStore.senderField: messageSender,
+                       FStore.bodyField: messageBody,
+                       FStore.dateField: Date().timeIntervalSince1970
+                   ]) { (error) in
+                       if let e = error {
+                           print("There was an issue saving data to firestore, \(e)")
+                       } else {
+                           print("Successfully saved data.")
+                           
+                           DispatchQueue.main.async {
+                                self.MessageBox.text = ""
+                           }
+                       }
+                   }
+               }
     
 }
 
+}
 
 extension MessageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,6 +111,10 @@ extension MessageViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
         cell.Label.text = messages[indexPath.row].body
+        
+        
+    
+        
         return cell
         
     }
@@ -86,3 +128,4 @@ extension MessageViewController: UITableViewDelegate {
         print(indexPath.row)
     }
 }
+
