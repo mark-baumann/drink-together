@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getUsername()
+            getUsername()
        
             downloadImages()
             
@@ -39,14 +39,11 @@ class ProfileViewController: UIViewController {
     
    
     func getUsername() {
-        db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser?.uid ?? "x")
-             .getDocuments { (querySnapshot, err) in
-
-
-                 let username = querySnapshot!.documents[0].get("username")
-                self.NameLabel.text = username as! String
+                
+        let username = Auth.auth().currentUser!.email
+        self.NameLabel.text = username!
              
-         }
+         
        
     }
     
@@ -55,7 +52,7 @@ class ProfileViewController: UIViewController {
     func downloadImages() {
         
         
-        if Auth.auth() != nil {
+        
             let storageRef = Storage.storage().reference()
             
             
@@ -74,8 +71,7 @@ class ProfileViewController: UIViewController {
             imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
                 
                 
-           
-        }
+
         }
         
         
