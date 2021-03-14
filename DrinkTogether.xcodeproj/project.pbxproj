@@ -16,6 +16,7 @@
 		4D8C0BDA25FCFA6D003B1334 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */; };
 		4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */; };
 		4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */; };
+		4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
 		BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		4D8C0BD425FCE9F4003B1334 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExtraData.swift; sourceTree = "<group>"; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */,
 				4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */,
 				4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */,
+				4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
 				4D6513FB25D7089F003813C9 /* ProfileViewController.swift in Sources */,
+				4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
 				4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */,
 				4D8C0BD525FCE9F4003B1334 /* Message.swift in Sources */,

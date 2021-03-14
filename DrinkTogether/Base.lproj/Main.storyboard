@@ -138,6 +138,45 @@
             </objects>
             <point key="canvasLocation" x="1673.913043478261" y="-278.57142857142856"/>
         </scene>
+        <!--Add Extra Data-->
+        <scene sceneID="vRi-At-FeW">
+            <objects>
+                <viewController storyboardIdentifier="AddExtraData" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cpG-gR-LCK" customClass="AddExtraData" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZhN-w9-PqU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="IbP-vh-ff4">
+                                <rect key="frame" x="27" y="67" width="320" height="216"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koc-VO-Fu3">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-YV-etd">
+                                <rect key="frame" x="133" y="469" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Safe"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cJG-G2-Mib"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cJG-G2-Mib" firstAttribute="bottom" secondItem="IbP-vh-ff4" secondAttribute="bottom" constant="384" id="p6t-cw-q3u"/>
+                            <constraint firstItem="IbP-vh-ff4" firstAttribute="top" secondItem="cJG-G2-Mib" secondAttribute="top" constant="67" id="pFy-00-iSR"/>
+                            <constraint firstItem="cJG-G2-Mib" firstAttribute="trailing" secondItem="IbP-vh-ff4" secondAttribute="trailing" constant="28" id="rwO-RL-d2N"/>
+                            <constraint firstItem="IbP-vh-ff4" firstAttribute="leading" secondItem="cJG-G2-Mib" secondAttribute="leading" constant="27" id="tYj-sb-LWQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="koc-VO-Fu3" id="CyH-5f-4QY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RA5-Ha-9ID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8000000000002" y="-673.31334332833592"/>
+        </scene>
         <!--Map-->
         <scene sceneID="Y8w-kR-H9H">
             <objects>
