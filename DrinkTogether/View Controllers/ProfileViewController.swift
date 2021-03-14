@@ -54,26 +54,32 @@ class ProfileViewController: UIViewController {
     
     func downloadImages() {
         
-        let storageRef = Storage.storage().reference()
         
-        
-        
-        
-        // Reference to an image file in Firebase Storage
-        let reference = storageRef.child("images/file.png")
-
-        // UIImageView in your ViewController
-        let imageView: UIImageView = self.imageView
-
-        // Placeholder image
-        let placeholderImage = UIImage(named: "placeholder.jpg")
-
-        // Load the image using SDWebImage
-        imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
+        if Auth.auth() != nil {
+            let storageRef = Storage.storage().reference()
             
             
-       
-    }
+            
+            
+            // Reference to an image file in Firebase Storage
+            let reference = storageRef.child("images/"+Auth.auth().currentUser!.uid+".png")
+
+            // UIImageView in your ViewController
+            let imageView: UIImageView = self.imageView
+
+            // Placeholder image
+            let placeholderImage = UIImage(named: "placeholder.jpg")
+
+            // Load the image using SDWebImage
+            imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
+                
+                
+           
+        }
+        }
+        
+        
+        
     
    
     
