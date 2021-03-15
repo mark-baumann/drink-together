@@ -20,15 +20,32 @@ SignIn and SignUp
 - [ ] Backend validation
   - [ ] "users"-"username" is unique
   - [ ] "users"-"username" has minlength of 5
-- [ ] Launch screen storyboard animation
+
 
 
 Location:
 - [ ] If the User set the Navigation Property in the Settings to "Never" - than nothing should appear
 - [x] Push the Location to the Firebase DB
 - [ ] show Persons near by your location
+- [ ] change the radius to 20 km, 40km, 60km
+- [ ] 
 
 
 UI:
-- [ ] Profile Tab with abbility to change account data also the actual promille value
+- [ ] Profile Tab with abbility to change account data and also see the actual promille value
+- [ ] Launch screen storyboard animation
+- [ ] On the Homescreen, there should be a \textbf{a swipe left, a map or something like instagram}
+- [ ] Timestamp for each hour, the user don´t drink anything. There is a formula on the Internet to calculate the actual promille
+
+Messaging: 
+- [ ] The User has the ability to write the person, which he see in the radius of his hometown
+- [ ] Also he can see old persons
+- [ ] Now the User can send Data to all user in the database, this should be specific
+- [ ] set the profile picture from you and the other person
+- [ ] left and right site of chatting
+- [ ] Delete Lines at background
+
+Issues:
+- [ ] IF User close the App at registering, and is not on the second screen the weight and so on is nil
+
 
