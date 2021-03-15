@@ -28,7 +28,7 @@ Location:
 - [x] Push the Location to the Firebase DB
 - [ ] show Persons near by your location
 - [ ] change the radius to 20 km, 40km, 60km
-- [ ] 
+
 
 
 UI:
