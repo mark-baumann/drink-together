@@ -74,7 +74,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             MapView.addAnnotation(newPin)
             
             
-            
+           
             let userID = Auth.auth().currentUser?.uid ?? "x"
             Firestore.firestore().collection("users").whereField("uid", isEqualTo: userID)
                     
@@ -89,7 +89,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                        
                        
                        
-                       geoFire.setLocation(CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), forKey: userID)
+            geoFire.setLocation(CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude), forKey: userID)
                      
                     
                        let centerQuery = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
@@ -97,11 +97,11 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                         
                 
             var queryHandle = circleQuery.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
-                let annotation = MKPointAnnotation()
-                let coord = CLLocationCoordinate2D() 
-                annotation.coordinate = coord
-                annotation.title = "some user name"
-                self.MapView.addAnnotation(annotation)
+                
+                
+                
+                
+                                
             })
                 
                 

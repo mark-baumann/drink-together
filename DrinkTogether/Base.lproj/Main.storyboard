@@ -158,6 +158,9 @@
                                 <rect key="frame" x="133" y="469" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Safe"/>
+                                <connections>
+                                    <action selector="SafeButtonTapped:" destination="cpG-gR-LCK" eventType="touchUpInside" id="Lti-5H-gxJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cJG-G2-Mib"/>
@@ -301,6 +304,13 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" name="AccentColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TM1-II-zWy">
+                                <rect key="frame" x="146" y="281" width="118" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MeR-Dc-qfD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -322,6 +332,7 @@
                     <connections>
                         <outlet property="NameLabel" destination="hBB-RV-HLP" id="2oq-Y7-7B4"/>
                         <outlet property="imageView" destination="aB2-Jy-TeF" id="c0x-ab-m5B"/>
+                        <outlet property="promilleValue" destination="TM1-II-zWy" id="NhZ-Eh-sSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UO5-0h-8qc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

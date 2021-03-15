@@ -24,6 +24,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
    
+    @IBOutlet weak var promilleValue: UILabel!
+    
+    
+    var ref: DatabaseReference!
+
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +39,7 @@ class ProfileViewController: UIViewController {
             downloadImages()
             
     
-        
+        ref = Database.database().reference()
         
     }
     
@@ -77,7 +83,6 @@ class ProfileViewController: UIViewController {
         
         
     
-   
     
     
     
