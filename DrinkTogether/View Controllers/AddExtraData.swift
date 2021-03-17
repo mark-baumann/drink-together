@@ -117,7 +117,7 @@ class AddExtraData: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func redirectHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as! TabViewController
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) 
               
               
               
