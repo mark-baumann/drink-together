@@ -16,11 +16,11 @@
 		4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */; };
 		4D9E1DE2260249DF0003A514 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DE1260249DF0003A514 /* User.swift */; };
 		4D9E1E0A260249E70003A514 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E1E09260249E70003A514 /* GoogleService-Info.plist */; };
-		4D9E1E0D26024B9F0003A514 /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E0C26024B9F0003A514 /* BottomControlsStackView.swift */; };
-		4D9E1E1326024BB20003A514 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E1226024BB20003A514 /* Extensions.swift */; };
 		4D9E1E1526024BBB0003A514 /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E1426024BBB0003A514 /* HomeNavigationStackView.swift */; };
-		4D9E1E1A26024C1F0003A514 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E1926024C1F0003A514 /* CardView.swift */; };
 		4D9E1E1D26024C5C0003A514 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E1C26024C5C0003A514 /* CardViewModel.swift */; };
+		4D9E1E2826024E1D0003A514 /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E2726024E1D0003A514 /* BottomControlsStackView.swift */; };
+		4D9E1E2B26024E270003A514 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E2A26024E270003A514 /* CardView.swift */; };
+		4D9E1E2E26024E310003A514 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1E2D26024E310003A514 /* Extensions.swift */; };
 		4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */; };
 		4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
@@ -47,11 +47,11 @@
 		4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		4D9E1DE1260249DF0003A514 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/User.swift"; sourceTree = "<group>"; };
 		4D9E1E09260249E70003A514 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4D9E1E0C26024B9F0003A514 /* BottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BottomControlsStackView.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/BottomControlsStackView.swift"; sourceTree = "<group>"; };
-		4D9E1E1226024BB20003A514 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../swift-small-projects/tinder-clone/tinder-clone/Extensions.swift"; sourceTree = "<group>"; };
 		4D9E1E1426024BBB0003A514 /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeNavigationStackView.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/HomeNavigationStackView.swift"; sourceTree = "<group>"; };
-		4D9E1E1926024C1F0003A514 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../Desktop/swift-small-projects/tinder-clone/tinder-clone/CardView.swift"; sourceTree = "<group>"; };
 		4D9E1E1C26024C5C0003A514 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		4D9E1E2726024E1D0003A514 /* BottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomControlsStackView.swift; sourceTree = "<group>"; };
+		4D9E1E2A26024E270003A514 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4D9E1E2D26024E310003A514 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExtraData.swift; sourceTree = "<group>"; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +141,7 @@
 				BCDF1F232577F1ED00B7DC8C /* Info.plist */,
 				BCDF1F582578153500B7DC8C /* Constants.swift */,
 				BCEAD0902579157B00C2D344 /* Utilities.swift */,
-				4D9E1E1226024BB20003A514 /* Extensions.swift */,
+				4D9E1E2D26024E310003A514 /* Extensions.swift */,
 			);
 			path = DrinkTogether;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				4D9E1E1426024BBB0003A514 /* HomeNavigationStackView.swift */,
-				4D9E1E0C26024B9F0003A514 /* BottomControlsStackView.swift */,
+				4D9E1E2726024E1D0003A514 /* BottomControlsStackView.swift */,
+				4D9E1E2A26024E270003A514 /* CardView.swift */,
 				BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */,
-				4D9E1E1926024C1F0003A514 /* CardView.swift */,
 				BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */,
 				BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */,
 				4D2A87A72593D4DF001D04FE /* EditProfileViewController.swift */,
@@ -309,16 +309,16 @@
 				BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */,
 				4D2A87A82593D4DF001D04FE /* EditProfileViewController.swift in Sources */,
 				4D9E1E1526024BBB0003A514 /* HomeNavigationStackView.swift in Sources */,
-				4D9E1E0D26024B9F0003A514 /* BottomControlsStackView.swift in Sources */,
 				4D9E1E1D26024C5C0003A514 /* CardViewModel.swift in Sources */,
 				BCDF1F2B2577F24300B7DC8C /* SignUpViewController.swift in Sources */,
+				4D9E1E2826024E1D0003A514 /* BottomControlsStackView.swift in Sources */,
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
+				4D9E1E2B26024E270003A514 /* CardView.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
-				4D9E1E1A26024C1F0003A514 /* CardView.swift in Sources */,
 				4D6513FB25D7089F003813C9 /* ProfileViewController.swift in Sources */,
-				4D9E1E1326024BB20003A514 /* Extensions.swift in Sources */,
 				4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
+				4D9E1E2E26024E310003A514 /* Extensions.swift in Sources */,
 				4D9E1DE2260249DF0003A514 /* User.swift in Sources */,
 				4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */,
 				4D8C0BD525FCE9F4003B1334 /* Message.swift in Sources */,
