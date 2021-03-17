@@ -15,74 +15,28 @@ import GeoFire
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
-   
+    @IBOutlet weak var MapView: MKMapView!
     
     let manager = CLLocationManager()
     
     
-    private let topstack = HomeNavigationStackView()
+    @IBAction func drinkbutton(_ sender: Any) {
+        
+        
+        
+    }
     
-    private let bottomstack = BottomControlsStackView()
-    
-    private let deckView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemPink
-        view.layer.cornerRadius = 5
-        return view
-    }()
-    
-
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
-        configureCards()
+       
         
     }
 
     
-    func configureCards() {
-        
-        let user1 = User(name: "penis", age: 22, images: [#imageLiteral(resourceName: "lady5c"), #imageLiteral(resourceName: "kelly1")])
-        let user2 = User(name: "Megan Fox", age: 23, images: [#imageLiteral(resourceName: "kelly2"), #imageLiteral(resourceName: "kelly1")])
-        
-        let CardView1 = CardView(viewModel: CardViewModel(user: user1))
-        let CardView2 = CardView(viewModel: CardViewModel(user: user2))
-        
-       
-        
-        deckView.addSubview(CardView1)
-        deckView.addSubview(CardView2)
-        
-        
-        CardView1.fillSuperview()
-        CardView2.fillSuperview()
-        
-       
-        
-        deckView.addSubview(CardView1)
-        deckView.addSubview(CardView2)
-        
-        
-        CardView1.fillSuperview()
-        CardView2.fillSuperview()
-    }
     
-
-    func configureUI() {
-        view.backgroundColor = .white
-        
-        let stack = UIStackView(arrangedSubviews: [topstack, deckView, bottomstack])
-        stack.axis = .vertical
-        
-        view.addSubview(stack)
-        stack.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor)
-        stack.isLayoutMarginsRelativeArrangement = true
-        stack.layoutMargins = .init(top: 0, left: 12, bottom: 0, right: 12)
-        stack.bringSubviewToFront(deckView)
-    }
   
     
     override func viewDidAppear(_ animated: Bool) {
@@ -108,13 +62,16 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let location = locations.last{
-            CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-           
+            let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            self.MapView.setRegion(region, animated: true)
             
             
             
             
-            
+            let newPin = MKPointAnnotation()
+            newPin.coordinate = location.coordinate
+            MapView.addAnnotation(newPin)
             
             
            
