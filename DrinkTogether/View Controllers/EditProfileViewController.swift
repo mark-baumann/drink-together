@@ -30,8 +30,14 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     
+    
+    
+    
+    
+    
     @IBAction func safeSettings(_ sender: Any?) {
     SaveInfo()
+    
     }
     
     func SaveInfo() {
@@ -82,13 +88,11 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
             return
         }
         
-    
+        if Auth.auth().currentUser != nil {
+            storage.child("images/"+Auth.auth().currentUser!.uid+".png").putData(imageData, metadata: nil, completion: { _, error in
+           
         
-            storage.child("images/file.png").putData(imageData, metadata: nil, completion: { _, error in
-            guard error == nil else {
-                print("Failed to upload")
-                return
-            }
+            print("error uploading image")
             
             
             
@@ -104,4 +108,5 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     
+}
 }

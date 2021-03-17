@@ -14,78 +14,75 @@ import FirebaseUI
 
 class ProfileViewController: UIViewController {
 
+    let db = Firestore.firestore()
     
-
+    
+    @IBOutlet weak var NameLabel: UILabel!
+    
     
     
     @IBOutlet weak var imageView: UIImageView!
     
    
+    @IBOutlet weak var promilleValue: UILabel!
+    
+    
+    var ref: DatabaseReference!
+
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+            getUsername()
        
             downloadImages()
-       
+            
     
-        
+        ref = Database.database().reference()
         
     }
     
    
+    func getUsername() {
+                
+        let username = Auth.auth().currentUser!.email
+        self.NameLabel.text = username!
+             
+         
+       
+    }
+    
+    
     
     func downloadImages() {
         
-        let storageRef = Storage.storage().reference()
-        let localURL = URL(string: "images/file.png")!
         
         
-        
-        
-        // Reference to an image file in Firebase Storage
-        let reference = storageRef.child("images/file.png")
+            let storageRef = Storage.storage().reference()
+            
+            
+            
+            
+            // Reference to an image file in Firebase Storage
+            let reference = storageRef.child("images/"+Auth.auth().currentUser!.uid+".png")
 
-        // UIImageView in your ViewController
-        let imageView: UIImageView = self.imageView
+            // UIImageView in your ViewController
+            let imageView: UIImageView = self.imageView
 
-        // Placeholder image
-        let placeholderImage = UIImage(named: "placeholder.jpg")
+            // Placeholder image
+            let placeholderImage = UIImage(named: "placeholder.jpg")
 
-        // Load the image using SDWebImage
-        imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
-        
-        
-        
-        
-        // Create a reference to the file we want to download
-        let starsRef = storageRef.child("images/file.png")
+            // Load the image using SDWebImage
+            imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
+                
+                
 
-        // Start the download (in this case writing to a file)
-        let downloadTask = storageRef.write(toFile: localURL)
-
-        // Observe changes in status
-        downloadTask.observe(.resume) { snapshot in
-          // Download resumed, also fires when the download starts
         }
-
-        downloadTask.observe(.pause) { snapshot in
-          // Download paused
-        }
-
-        downloadTask.observe(.progress) { snapshot in
-          // Download reported progress
-          let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
-            / Double(snapshot.progress!.totalUnitCount)
-        }
-
-        downloadTask.observe(.success) { snapshot in
-          // Download completed successfully
-        }
-    }
+        
+        
+        
     
-   
     
     
     

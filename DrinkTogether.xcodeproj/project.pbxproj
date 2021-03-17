@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A87A425929A51001D04FE /* TabViewController.swift */; };
 		4D2A87A82593D4DF001D04FE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A87A72593D4DF001D04FE /* EditProfileViewController.swift */; };
-		4D6513DE25D6F142003813C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6513DD25D6F141003813C9 /* GoogleService-Info.plist */; };
 		4D6513FB25D7089F003813C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6513FA25D7089F003813C9 /* ProfileViewController.swift */; };
+		4D8C0BD025FCE02B003B1334 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */; };
+		4D8C0BD525FCE9F4003B1334 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD425FCE9F4003B1334 /* Message.swift */; };
+		4D8C0BDA25FCFA6D003B1334 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */; };
+		4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */; };
+		4D9E1DC4260246A70003A514 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DC3260246A70003A514 /* Extensions.swift */; };
+		4D9E1DC9260246B80003A514 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DC8260246B80003A514 /* CardView.swift */; };
+		4D9E1DCC260246BE0003A514 /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DCB260246BE0003A514 /* BottomControlsStackView.swift */; };
+		4D9E1DCF260246CD0003A514 /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DCE260246CD0003A514 /* HomeNavigationStackView.swift */; };
+		4D9E1DD6260246F40003A514 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DD5260246F40003A514 /* User.swift */; };
+		4D9E1DD9260247160003A514 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D9E1DD8260247160003A514 /* GoogleService-Info.plist */; };
+		4D9E1DDD260247460003A514 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9E1DDC260247460003A514 /* CardViewModel.swift */; };
+		4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */; };
+		4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */; };
 		972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */; };
 		BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */; };
 		BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */; };
-		BCDF1F1A2577F1ED00B7DC8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF1F192577F1ED00B7DC8C /* ViewController.swift */; };
 		BCDF1F1D2577F1ED00B7DC8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF1F1B2577F1ED00B7DC8C /* Main.storyboard */; };
 		BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDF1F1E2577F1ED00B7DC8C /* Assets.xcassets */; };
 		BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF1F202577F1ED00B7DC8C /* LaunchScreen.storyboard */; };
@@ -29,13 +40,23 @@
 		256DAE9DCD383985160BD61D /* Pods_DrinkTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2A87A425929A51001D04FE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4D2A87A72593D4DF001D04FE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		4D6513DD25D6F141003813C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D6513FA25D7089F003813C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		4D8C0BD425FCE9F4003B1334 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		4D9E1DC3260246A70003A514 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../swift-small-projects/tinder-clone/tinder-clone/Extensions.swift"; sourceTree = "<group>"; };
+		4D9E1DC8260246B80003A514 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/CardView.swift"; sourceTree = "<group>"; };
+		4D9E1DCB260246BE0003A514 /* BottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BottomControlsStackView.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/BottomControlsStackView.swift"; sourceTree = "<group>"; };
+		4D9E1DCE260246CD0003A514 /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeNavigationStackView.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/HomeNavigationStackView.swift"; sourceTree = "<group>"; };
+		4D9E1DD5260246F40003A514 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../swift-small-projects/tinder-clone/tinder-clone/User.swift"; sourceTree = "<group>"; };
+		4D9E1DD8260247160003A514 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4D9E1DDC260247460003A514 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExtraData.swift; sourceTree = "<group>"; };
 		6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkTogether.release.xcconfig"; path = "Target Support Files/Pods-DrinkTogether/Pods-DrinkTogether.release.xcconfig"; sourceTree = "<group>"; };
 		BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCDF1F192577F1ED00B7DC8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCDF1F1C2577F1ED00B7DC8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCDF1F1E2577F1ED00B7DC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCDF1F212577F1ED00B7DC8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972C4B455265BF343A7DFDC5 /* Pods_DrinkTogether.framework in Frameworks */,
+				4DA7EFA425FD19FB00CB0EE1 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +89,15 @@
 				6010102FEF5A24F4BE8C23C7 /* Pods-DrinkTogether.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D8C0BD325FCE9D9003B1334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D8C0BD425FCE9F4003B1334 /* Message.swift */,
+				4D9E1DD5260246F40003A514 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9957FBFE94F7A8100C7CF0A8 /* Frameworks */ = {
@@ -98,9 +129,12 @@
 		BCDF1F142577F1ED00B7DC8C /* DrinkTogether */ = {
 			isa = PBXGroup;
 			children = (
-				4D6513DD25D6F141003813C9 /* GoogleService-Info.plist */,
+				4D8C0BD325FCE9D9003B1334 /* Models */,
+				4D9E1DD8260247160003A514 /* GoogleService-Info.plist */,
 				BCDF1F332577F28200B7DC8C /* View Controllers */,
 				BCDF1F152577F1ED00B7DC8C /* AppDelegate.swift */,
+				4D2A87A425929A51001D04FE /* TabViewController.swift */,
+				4D9E1DC3260246A70003A514 /* Extensions.swift */,
 				BCDF1F172577F1ED00B7DC8C /* SceneDelegate.swift */,
 				BCDF1F1B2577F1ED00B7DC8C /* Main.storyboard */,
 				BCDF1F1E2577F1ED00B7DC8C /* Assets.xcassets */,
@@ -115,13 +149,19 @@
 		BCDF1F332577F28200B7DC8C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCDF1F192577F1ED00B7DC8C /* ViewController.swift */,
+				4D9E1DCE260246CD0003A514 /* HomeNavigationStackView.swift */,
+				4D9E1DCB260246BE0003A514 /* BottomControlsStackView.swift */,
+				4D9E1DC8260246B80003A514 /* CardView.swift */,
 				BCDF1F2A2577F24300B7DC8C /* SignUpViewController.swift */,
 				BCDF1F2D2577F25800B7DC8C /* SignInViewController.swift */,
 				BCDF1F302577F26D00B7DC8C /* HomeViewController.swift */,
-				4D2A87A425929A51001D04FE /* TabViewController.swift */,
 				4D2A87A72593D4DF001D04FE /* EditProfileViewController.swift */,
 				4D6513FA25D7089F003813C9 /* ProfileViewController.swift */,
+				4D8C0BCF25FCE02B003B1334 /* MessageViewController.swift */,
+				4D8C0BD825FCFA6D003B1334 /* MessageCell.swift */,
+				4D8C0BD925FCFA6D003B1334 /* MessageCell.xib */,
+				4DDB8EF325FEBD1E00863F2F /* AddExtraData.swift */,
+				4D9E1DDC260247460003A514 /* CardViewModel.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +185,9 @@
 			dependencies = (
 			);
 			name = DrinkTogether;
+			packageProductDependencies = (
+				4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */,
+			);
 			productName = DrinkTogether;
 			productReference = BCDF1F122577F1ED00B7DC8C /* DrinkTogether.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +215,9 @@
 				Base,
 			);
 			mainGroup = BCDF1F092577F1ED00B7DC8C;
+			packageReferences = (
+				4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = BCDF1F132577F1ED00B7DC8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,10 +232,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8C0BDB25FCFA6D003B1334 /* MessageCell.xib in Resources */,
 				BCDF1F222577F1ED00B7DC8C /* LaunchScreen.storyboard in Resources */,
-				4D6513DE25D6F142003813C9 /* GoogleService-Info.plist in Resources */,
 				BCDF1F1F2577F1ED00B7DC8C /* Assets.xcassets in Resources */,
 				BCDF1F1D2577F1ED00B7DC8C /* Main.storyboard in Resources */,
+				4D9E1DD9260247160003A514 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,17 +306,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDF1F1A2577F1ED00B7DC8C /* ViewController.swift in Sources */,
 				BCDF1F162577F1ED00B7DC8C /* AppDelegate.swift in Sources */,
 				4D2A87A82593D4DF001D04FE /* EditProfileViewController.swift in Sources */,
 				BCDF1F2B2577F24300B7DC8C /* SignUpViewController.swift in Sources */,
+				4D9E1DCF260246CD0003A514 /* HomeNavigationStackView.swift in Sources */,
+				4D9E1DDD260247460003A514 /* CardViewModel.swift in Sources */,
 				BCDF1F2E2577F25800B7DC8C /* SignInViewController.swift in Sources */,
 				BCDF1F592578153600B7DC8C /* Constants.swift in Sources */,
+				4D9E1DCC260246BE0003A514 /* BottomControlsStackView.swift in Sources */,
 				4D6513FB25D7089F003813C9 /* ProfileViewController.swift in Sources */,
+				4D9E1DD6260246F40003A514 /* User.swift in Sources */,
+				4D9E1DC4260246A70003A514 /* Extensions.swift in Sources */,
+				4DDB8EF425FEBD1E00863F2F /* AddExtraData.swift in Sources */,
 				BCDF1F182577F1ED00B7DC8C /* SceneDelegate.swift in Sources */,
 				4D2A87A525929A51001D04FE /* TabViewController.swift in Sources */,
+				4D8C0BD525FCE9F4003B1334 /* Message.swift in Sources */,
+				4D9E1DC9260246B80003A514 /* CardView.swift in Sources */,
 				BCEAD0912579157B00C2D344 /* Utilities.swift in Sources */,
+				4D8C0BD025FCE02B003B1334 /* MessageViewController.swift in Sources */,
 				BCDF1F312577F26D00B7DC8C /* HomeViewController.swift in Sources */,
+				4D8C0BDA25FCFA6D003B1334 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Z988D3GT3S;
 				INFOPLIST_FILE = DrinkTogether/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -425,7 +482,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.obser.com.DrinkTogether;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.obser.DrinkTogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Z988D3GT3S;
 				INFOPLIST_FILE = DrinkTogether/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -446,7 +505,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.obser.com.DrinkTogether;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.obser.DrinkTogether;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,6 +535,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DA7EFA325FD19FB00CB0EE1 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DA7EFA225FD19FB00CB0EE1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCDF1F0A2577F1ED00B7DC8C /* Project object */;
 }
