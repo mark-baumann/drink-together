@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -186,157 +185,14 @@
                     <view key="view" contentMode="scaleToFill" id="LYz-n3-O2N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="URw-dq-ThP">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-VR-iyp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="drink together" id="BMs-eM-db5">
-                                        <barButtonItem key="rightBarButtonItem" title="Messages" image="message" catalog="system" id="Xwi-E2-nhY">
-                                            <connections>
-                                                <segue destination="EJs-MQ-cER" kind="show" id="TP3-B5-MfO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77C-MJ-txu">
-                                <rect key="frame" x="139" y="501" width="97" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Project_App_Icon">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="drinkbutton:" destination="Zvl-LS-rjO" eventType="touchUpInside" id="AFK-mP-f3Y"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1J8-4s-1gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin.and.ellipse" catalog="system" id="com-HY-9zJ"/>
-                    <connections>
-                        <outlet property="MapView" destination="URw-dq-ThP" id="euT-df-2nm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aW-Ah-N1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3471.1999999999998" y="93.103448275862078"/>
-        </scene>
-        <!--Edit Profile View Controller-->
-        <scene sceneID="Ouj-wF-k4V">
-            <objects>
-                <viewController id="m8r-fA-vuc" customClass="EditProfileViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sow-8V-KRl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-3Z-RKk">
-                                <rect key="frame" x="78" y="268" width="110" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uC6-Wx-g0S">
-                                <rect key="frame" x="196" y="261" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-Bn-gte">
-                                <rect key="frame" x="158" y="532" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Safe"/>
-                                <connections>
-                                    <action selector="safeSettings:" destination="m8r-fA-vuc" eventType="touchUpInside" id="3GG-NE-cKB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLd-CP-GBA">
-                                <rect key="frame" x="196" y="355" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Upload"/>
-                                <connections>
-                                    <action selector="UploadImage:" destination="m8r-fA-vuc" eventType="touchUpInside" id="srh-jI-8fO"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Picture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcF-sX-KNF">
-                                <rect key="frame" x="78" y="360" width="93" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fNt-US-Np9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="KxI-AO-8Ck"/>
-                    <connections>
-                        <outlet property="changeUsername" destination="uC6-Wx-g0S" id="ALT-qw-oBh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0ML-Ka-7Eq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6254" y="1352"/>
-        </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="MRa-4R-IwQ">
-            <objects>
-                <viewController id="R8I-Z9-0z5" customClass="ProfileViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4fD-bG-ynY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="imageView" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-Jy-TeF">
-                                <rect key="frame" x="229" y="68" width="100" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBB-RV-HLP">
-                                <rect key="frame" x="16" y="68" width="205" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <color key="highlightedColor" name="AccentColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TM1-II-zWy">
-                                <rect key="frame" x="146" y="281" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="MeR-Dc-qfD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="c7T-1K-FeP">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="e36-OF-ZRP">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KpM-5Z-pZ0">
-                                <rect key="frame" x="267" y="0.0" width="92" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="EDIT"/>
-                                <connections>
-                                    <segue destination="m8r-fA-vuc" kind="show" id="D0V-JQ-NFS"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="NameLabel" destination="hBB-RV-HLP" id="2oq-Y7-7B4"/>
-                        <outlet property="imageView" destination="aB2-Jy-TeF" id="c0x-ab-m5B"/>
-                        <outlet property="promilleValue" destination="TM1-II-zWy" id="NhZ-Eh-sSq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UO5-0h-8qc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4621.6000000000004" y="834.33283358320841"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="HNF-Ly-Ahh">
@@ -422,50 +278,12 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
-        <!--Tab View Controller-->
-        <scene sceneID="5Ha-LQ-O78">
-            <objects>
-                <tabBarController storyboardIdentifier="Tab" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EG6-SM-nks" customClass="TabViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="umx-Jz-8k2">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Zvl-LS-rjO" kind="relationship" relationship="viewControllers" id="nlx-At-bNv"/>
-                        <segue destination="8Ay-iC-NRm" kind="relationship" relationship="viewControllers" id="RUF-od-r9k"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XeC-LA-ffa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="93.75"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="NKJ-qN-OaA">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ay-iC-NRm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="jXf-An-i6D"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9o-cL-GRh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="R8I-Z9-0z5" kind="relationship" relationship="rootViewController" id="lKG-3x-Z3R"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tgI-3h-tGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3471.0144927536235" y="835.71428571428567"/>
-        </scene>
         <!--Message View Controller-->
         <scene sceneID="Yai-ia-fP0">
             <objects>
                 <viewController id="EJs-MQ-cER" customClass="MessageViewController" customModule="DrinkTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38Q-fM-pqF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGQ-Mk-duC">
@@ -505,15 +323,7 @@
     <resources>
         <image name="Project_App_Icon" width="1024" height="1024"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="message" catalog="system" width="128" height="113"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
